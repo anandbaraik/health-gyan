@@ -23,7 +23,6 @@ const APP = () => {
                 path='/'
                 element={<Home/>}></Route>
             <Route
-                exact
                 path='/exercise/:id'
                 element={<ExerciseDetail/>}></Route>
         </Routes>
