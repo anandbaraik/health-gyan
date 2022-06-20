@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Exercises = () => {
+const Exercises = ({bodyPart, exercises, setExercises}) => {
   return (
     <div>Exercises</div>
   )
