@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Pagination, Box, Stack, Typography } from '@mui/material';
 import {exerciseOptions, fetchData } from "../utils/fetchData";
 import {ExerciseCard} from "../components/ExerciseCard"
+import NotFound from './NotFound';
 const Exercises = ({bodyPart, exercises, setExercises}) => {
 
 	useEffect(() => {
@@ -56,7 +57,7 @@ const Exercises = ({bodyPart, exercises, setExercises}) => {
 					/>
 				))
 				) : (
-					'No exercise'
+					<NotFound/>
 				)
 				
 			}
