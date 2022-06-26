@@ -50,7 +50,8 @@ export const Details = ({exerciseDetail}) => {
                             xs: "30px"
                         },
                         fontWeight: "700"
-                    }}>
+                    }}
+                    textTransform="capitalize">
                     {name}
                 </Typography>
                 <Typography

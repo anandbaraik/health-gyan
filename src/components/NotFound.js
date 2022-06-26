@@ -18,7 +18,8 @@ const NotFound = () => {
                 fontSize:{
                     lg:'1.9rem',
                     xs:'1.3rem'
-                }
+                },
+                fontFamily: 'Dancing Script'
             }}
             className="no-result-found">
             We didn't find any results, Sorry! <br/>
