@@ -11,8 +11,7 @@ const Footer = () => (
 			justifyContent:"center",
 			alignItems:"baseline"
 		}} flexWrap="wrap" px="40px" pt="24px">
-		<img src={Logo} alt="logo"
-		style={{ width: '48px', height: '41px' }} />
+		<img src={Logo} alt="logo"/>
 		<span style={{
 			fontSize:"30px",
 			marginLeft: "-30px",
