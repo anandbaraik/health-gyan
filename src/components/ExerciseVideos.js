@@ -2,8 +2,6 @@ import { Box, Stack, Typography } from '@mui/material';
 import React from 'react'
 
 export const ExerciseVideos = ({exerciseVideos, name}) => {
-  console.log(exerciseVideos);
-  console.log(name);
   if(!exerciseVideos) return 'Loading';
   return (
     <Box
@@ -14,8 +12,8 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
 			}
 		}} p="20px">
 		<Typography
-			variant='h3'
-			mb="3px">
+			variant='h4'
+			mb="20px">
 			Watch {` `}
 			<span title={name} style={{color:"#ff2625"}}>
 				{
