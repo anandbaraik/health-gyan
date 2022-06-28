@@ -7,7 +7,7 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
     <Box
     	sx={{
 			marginTop:{
-				lg:"200px",
+				lg:"50px",
 				xs:"20px"
 			}
 		}} p="20px">
@@ -38,7 +38,7 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
 				}
 			}}>
 			{
-				exerciseVideos?.map((item, index) => (
+				exerciseVideos?.slice(0, 3)?.map((item, index) => (
 					item?.video && (
 						<a
 							key={index}
