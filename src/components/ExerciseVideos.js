@@ -60,6 +60,7 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
 								<Typography
 									sx={{ fontSize: { lg: '28px', xs: '18px' } }} 
 									fontWeight={600} color="#000"
+									textTransform="capitalize"
 									title={item?.video?.title}>
 									{
 										item?.video?.title?.length > 15 ?
@@ -68,6 +69,7 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
 									}
 								</Typography>
 								<Typography fontSize="14px" color="#000"
+									textTransform="capitalize"
 									title={item?.video?.channelName}>
 									{
 										item?.video?.channelName?.length > 15 ?
