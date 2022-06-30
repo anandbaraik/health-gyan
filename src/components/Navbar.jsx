@@ -28,6 +28,7 @@ const Navbar = () => {
 					height: '48px',
 					margin: '0 20px'
 				}}
+				loading="lazy"
 			/>
 		</Link>
 		<Stack

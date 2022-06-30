@@ -30,8 +30,10 @@ const Video = ({exerciseVideos, name}) => {
                                 borderRadius:"20px",
                                 width:"360px",
                                 height:"202px",
-                                objectFit:"cover"
+                                objectFit:"cover",
+                                maxWidth:"100%"
                             }}
+                            loading="lazy"
                             src={item?.video?.thumbnails?.[0]?.url}
                         />
                         <Box>

@@ -10,6 +10,7 @@ const NotFound = () => {
                 width:"100%",
                 maxWidth: "100%"
             }}
+            loading="lazy"
         />
         <Typography
 			variant='h3' mt="10px"

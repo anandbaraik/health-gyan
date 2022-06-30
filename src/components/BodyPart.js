@@ -26,8 +26,10 @@ const BodyPart = ({item, bodyPart, setBodyPart}) => {
             alt={item || 'dumbbell'}
             style={{
                 width:"40px",
-                height: "40px"
+                height: "40px",
+                maxWidth:"100%"
             }}
+            loading="lazy"
         />
         <Typography
             fontSize="24px" 

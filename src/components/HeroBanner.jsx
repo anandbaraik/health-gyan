@@ -62,6 +62,7 @@ const HeroBanner = () => {
       <img src={heroBanner}
         alt="banner-img"
         className='hero-banner-img'
+        loading="lazy"
       />
     </Box>
   )

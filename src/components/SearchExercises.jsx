@@ -90,7 +90,8 @@ const SearchExercises = ({bodyPart, setBodyPart, setExercises}) => {
 		</Box>
 		<Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
 			<HorizontalScrollbar 
-				bodyParts={bodyParts}
+				data={bodyParts}
+				bodyParts
 				bodyPart={bodyPart}
 				setBodyPart={setBodyPart}
 			/>
