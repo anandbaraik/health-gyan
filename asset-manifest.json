@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/health-gyan/static/css/main.0ae23857.css",
+    "main.js": "/health-gyan/static/js/main.e2014bff.js",
+    "static/media/banner.png": "/health-gyan/static/media/banner.5209b5e92a864ca0c615.png",
+    "static/media/mindfulness.png": "/health-gyan/static/media/mindfulness.8d688bd10ccf3fec6082.png",
+    "static/media/gym.png": "/health-gyan/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/health-gyan/index.html",
+    "main.0ae23857.css.map": "/health-gyan/static/css/main.0ae23857.css.map",
+    "main.e2014bff.js.map": "/health-gyan/static/js/main.e2014bff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ae23857.css",
+    "static/js/main.e2014bff.js"
+  ]
+}
