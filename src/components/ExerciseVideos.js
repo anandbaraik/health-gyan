@@ -6,6 +6,7 @@ import Video from './Video';
 export const ExerciseVideos = ({exerciseVideos, name}) => {
   return (
     <Box
+		id="exercises"
     	sx={{
 			marginTop:{
 				lg:"50px",
