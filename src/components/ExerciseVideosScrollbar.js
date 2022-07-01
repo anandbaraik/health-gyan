@@ -1,25 +1,37 @@
-import React from 'react'
-import { Stack, Box, Typography } from '@mui/material'
-const Video = ({exerciseVideos, name}) => {
+import { Box, Typography } from '@mui/material';
+import React, {useContext} from 'react'
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import RightArrowIcon from '../assets/icons/right-arrow.png';
+import LeftArrowIcon from '../assets/icons/left-arrow.png';
+
+const LeftArrow = () => {
+	const { scrollPrev } = useContext(VisibilityContext);  
+	return (
+	  <Typography onClick={() => scrollPrev()} className="right-arrow">
+		<img src={LeftArrowIcon} alt="right-arrow" />
+	  </Typography>
+	);
+};
+  
+const RightArrow = () => {
+	const { scrollNext } = useContext(VisibilityContext);
+	return (
+		<Typography onClick={() => scrollNext()} className="left-arrow">
+		<img src={RightArrowIcon} alt="right-arrow" />
+		</Typography>
+	);
+};
+
+const ExerciseVideosScrollbar = ({exerciseVideos, name}) => {
   return (
-    <Stack
-        justifyContent="flex-start"
-        flexWrap="wrap"
-        alignItems="center"
-        sx={{
-            flexDirection:{
-                lg:"row"
-            },
-            gap:{
-                lg:"110px",
-                xs:"0px"
-            }
-        }}>
+    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {
-            exerciseVideos?.slice(0, 3)?.map((item, index) => (
+            exerciseVideos?.map((item, index) => (
                 item?.video && (
                     <a
-                        key={index}
+                        key={item?.video?.videoId || index}
+			            itemId={item?.video?.videoId || index}
+			            title={item?.video?.title}
                         className="exercise-video"
                         href={`https://www.youtube.com/watch?v=${item?.video?.videoId}`}
                         target="_blank"
@@ -62,8 +74,8 @@ const Video = ({exerciseVideos, name}) => {
                 )
             ))
         }
-    </Stack>
+    </ScrollMenu>
   )
 }
 
-export default Video
+export default ExerciseVideosScrollbar

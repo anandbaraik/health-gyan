@@ -1,8 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react'
+import ExerciseVideosScrollbar from './ExerciseVideosScrollbar';
 import Loader from './Loader';
-import Video from './Video';
-
 export const ExerciseVideos = ({exerciseVideos, name}) => {
   return (
     <Box
@@ -29,10 +28,19 @@ export const ExerciseVideos = ({exerciseVideos, name}) => {
 		{
 			!exerciseVideos.length ? 
 				<Loader/> : 
-				<Video
-					exerciseVideos={exerciseVideos}
-					name={name}
-				/>
+				(
+					<Stack
+					direction="row"
+					sx={{
+						p:2,
+						position:"relative"
+					}}>
+						<ExerciseVideosScrollbar
+							exerciseVideos={exerciseVideos}
+							name={name}
+						/>
+					</Stack>
+				)
 		}
     </Box>
   )

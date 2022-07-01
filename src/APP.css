@@ -107,6 +107,8 @@ body {
     gap: 24px;
     width: 301px;
     height: 297px;
+    margin: 0 30px;
+    max-width: 100%;
     text-decoration: none;
   }
   
